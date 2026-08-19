@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خدمات برق‌کاری ساختمان</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Tahoma,Arial,sans-serif;
+  background:#f4f7fb;
+  color:#172033;
+}
+header{
+  background:linear-gradient(135deg,#07152f,#1261a0);
+  color:white;
+  padding:45px 20px;
+  text-align:center;
+}
+header h1{font-size:30px;margin:0 0 15px}
+header p{font-size:17px;line-height:2;margin:0}
+.container{max-width:950px;margin:auto;padding:25px 15px}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+  margin-top:-25px;
+}
+.card{
+  background:white;
+  padding:25px 18px;
+  border-radius:18px;
+  box-shadow:0 5px 20px #00000012;
+  text-align:center;
+}
+.card .icon{font-size:38px}
+.card h2{font-size:18px}
+.card p{line-height:1.9;color:#555}
+.form-box{
+  background:white;
+  margin-top:25px;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 5px 20px #00000012;
+}
+.form-box h2{text-align:center;margin-top:0}
+label{display:block;margin:15px 0 7px;font-weight:bold}
+input,select,textarea{
+  width:100%;
+  padding:13px;
+  border:1px solid #ccd5e2;
+  border-radius:10px;
+  font-size:15px;
+  font-family:inherit;
+}
+textarea{height:110px;resize:vertical}
+button{
+  width:100%;
+  padding:15px;
+  border:0;
+  border-radius:12px;
+  background:#087f5b;
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+  margin-top:20px;
+}
+.contact{
+  margin-top:25px;
+  background:#07152f;
+  color:white;
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+}
+.contact a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  margin:10px 0;
+  padding:13px;
+  border-radius:10px;
+  background:#087f5b;
+}
+.note{
+  background:#fff7d6;
+  padding:14px;
+  border-radius:10px;
+  margin-top:15px;
+  line-height:1.8;
+  color:#654f00;
+}
+footer{
+  text-align:center;
+  padding:25px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>⚡ خدمات تخصصی برق‌کاری ساختمان</h1>
+<p>
+برق‌کاری ساختمان از صفر تا صد | نصب و تعمیر آیفون صوتی و تصویری |
+رفع عیب و اتصالی
+</p>
+</header>
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">⚡</div>
+<h2>برق‌کاری ساختمان</h2>
+<p>اجرای خدمات برق ساختمان، عیب‌یابی، نصب و تعمیر تجهیزات برقی.</p>
+</div>
+
+<div class="card">
+<div class="icon">📹</div>
+<h2>آیفون صوتی و تصویری</h2>
+<p>نصب، تعمیر و عیب‌یابی انواع آیفون صوتی و تصویری ساختمان.</p>
+</div>
+
+<div class="card">
+<div class="icon">🔧</div>
+<h2>رفع عیب و اتصالی</h2>
+<p>بررسی و رفع مشکلات برق و اتصالی ساختمان با ثبت درخواست شما.</p>
+</div>
+
+</div>
+
+<div class="form-box">
+
+<h2>📝 ثبت مشکل و درخواست تماس</h2>
+
+<p style="text-align:center">
+برای ثبت مشکل، فرم زیر را کامل کنید تا برای هماهنگی با شما تماس گرفته شود.
+</p>
+
+<form id="problemForm">
+
+<label>نام و نام خانوادگی</label>
+<input id="name" type="text" placeholder="نام و نام خانوادگی" required>
+
+<label>نوع سکونت</label>
+<select id="home" required>
+<option value="">انتخاب کنید</option>
+<option>ویلایی</option>
+<option>آپارتمانی</option>
+</select>
+
+<label>نوع اشتراک</label>
+<select id="subscription" required>
+<option value="">انتخاب کنید</option>
+<option>سه ماهه</option>
+<option>شش ماهه</option>
+<option>یک ساله</option>
+</select>
+
+<div class="note">
+جهت دریافت قیمت اشتراک‌ها لطفاً از طریق واتساپ پیام دهید.
+</div>
+
+<label>محل سکونت</label>
+<input id="location" type="text" placeholder="شهر / محله" required>
+
+<label>نوع مشکل</label>
+<textarea id="problem" placeholder="مثلاً اتصالی، قطع برق، مشکل آیفون و..." required></textarea>
+
+<label>شماره تلفن</label>
+<input id="phone" type="tel" placeholder="شماره تماس شما" required>
+
+<button type="submit">📞 ثبت مشکل و درخواست تماس</button>
+
+</form>
+
+</div>
+
+<div class="contact">
+
+<h2>📞 تماس مستقیم</h2>
+
+<a href="tel:09937357986">
+تماس با شماره 09937357986
+</a>
+
+<a href="tel:09130634163">
+تماس با شماره 09130634163
+</a>
+
+<h2>💬 واتساپ</h2>
+
+<a href="https://wa.me/989937357986" target="_blank">
+واتساپ شماره 09937357986
+</a>
+
+<a href="https://wa.me/989130634163" target="_blank">
+واتساپ شماره 09130634163
+</a>
+
+</div>
+
+</div>
+
+<footer>
+© تمامی حقوق محفوظ است | خدمات برق‌کاری ساختمان
+</footer>
+
+<script>
+document.getElementById("problemForm").addEventListener("submit",function(e){
+e.preventDefault();
+
+let name=document.getElementById("name").value;
+let home=document.getElementById("home").value;
+let subscription=document.getElementById("subscription").value;
+let location=document.getElementById("location").value;
+let problem=document.getElementById("problem").value;
+let phone=document.getElementById("phone").value;
+
+let message=
+"سلام، درخواست ثبت مشکل برق ساختمان دارم.%0A%0A"+
+"نام و نام خانوادگی: "+encodeURIComponent(name)+"%0A"+
+"نوع سکونت: "+encodeURIComponent(home)+"%0A"+
+"اشتراک: "+encodeURIComponent(subscription)+"%0A"+
+"محل سکونت: "+encodeURIComponent(location)+"%0A"+
+"نوع مشکل: "+encodeURIComponent(problem)+"%0A"+
+"شماره تماس: "+encodeURIComponent(phone);
+
+let url1="https://wa.me/989937357986?text="+message;
+let url2="https://wa.me/989130634163?text="+message;
+
+window.open(url1,"_blank");
+setTimeout(function(){
+window.open(url2,"_blank");
+},1000);
+});
+</script>
+
+</body>
+</html>
